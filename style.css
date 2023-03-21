@@ -3,6 +3,10 @@ html {
   width: 100%;
 }
 
+body {
+  background-color: #ecf0f1 !important;
+}
+
 main {
-  background-color: #ecf0f1;
+  background-color: #fff;
 }
