@@ -23,14 +23,50 @@
             <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
           <section>
+            <!--
+              ▪ Nome
+              ▪ CPF
+              ▪ Identidade
+              ▪ Sexo
+              ▪ Data de Nascimento
+              ▪ Nome do Pai
+              ▪ Nome da Mãe
+              ▪ Estado civil
+              ▪ Naturalidade
+              ▪ Nacionalidade
+              ▪ Telefone Residencial
+              ▪ Telefone Celular
+            -->
             <div class="form-group">
-              <label for="exampleFormControlInput1">Email address</label>
+              <label for="name">Nome</label>
               <input 
-                type="email" 
+                type="text" 
                 class="form-control" 
-                id="exampleFormControlInput1" 
-                placeholder="name@example.com"
+                id="name" 
+                placeholder="Vinícius Moreira"
               >
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="cpf">CPF</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="cpf"
+                  maxlength="11" 
+                  placeholder="000.000.000-XX"
+                >
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="rg">RG</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="rg"
+                  maxlength="11" 
+                  placeholder="0000000000-X"
+                >
+              </div>
             </div>
           </section>
         </article>
