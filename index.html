@@ -12,7 +12,7 @@
 
 <body>
   
-  <main class="container col-7 rounded">
+  <main class="container col-md-6 rounded">
     <form action="https://www.w3schools.com/action_page.php" method="POST">
       <fieldset>
         <legend>Dados cadastrais</legend>
@@ -23,26 +23,14 @@
             <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
           <section>
-            <!--
-              ▪ Nome
-              ▪ CPF
-              ▪ Identidade
-              ▪ Sexo
-              ▪ Data de Nascimento
-              ▪ Nome do Pai
-              ▪ Nome da Mãe
-              ▪ Estado civil
-              ▪ Naturalidade
-              ▪ Nacionalidade
-              ▪ Telefone Residencial
-              ▪ Telefone Celular
-            -->
+            
             <div class="form-group">
               <label for="name">Nome</label>
               <input 
                 type="text" 
                 class="form-control" 
                 id="name" 
+                name="name"
                 placeholder="Vinícius Moreira"
               >
             </div>
@@ -53,6 +41,7 @@
                   type="text" 
                   class="form-control" 
                   id="cpf"
+                  name="cpf"
                   maxlength="11" 
                   placeholder="000.000.000-XX"
                 >
@@ -63,10 +52,110 @@
                   type="text" 
                   class="form-control" 
                   id="rg"
+                  name="rg"
                   maxlength="11" 
                   placeholder="0000000000-X"
                 >
               </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="gender">Sexo</label>
+                <select class="form-control" name="gender" id="gender">
+                  <option value="male">Masculino</option>
+                  <option value="female">Feminino</option>
+                </select>
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="birth">Nascimento</label>
+                <input 
+                  type="date" 
+                  class="form-control" 
+                  id="birth"
+                  name="birth"
+                  maxlength="11" 
+                  placeholder="0000000000-X"
+                >
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="name_mother">Nome da mãe</label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="name_mother" 
+                name="name_mother"
+                placeholder="Maria Souza"
+              >
+            </div>
+            <div class="form-group">
+              <label for="name_father">Nome do pai</label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="name_father" 
+                name="name_father"
+                placeholder="Francisco Silva"
+              >
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="marital_status">Sexo</label>
+                <select class="form-control" name="marital_status" id="marital_status">
+                  <option value="casado">Casado</option>
+                  <option value="solteiro">Solteiro</option>
+                  <option value="separado">Separado</option>
+                  <option value="divorciado">Divorciado</option>
+                  <option value="viúvo">Viúvo</option>
+                </select>
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="naturality">Naturalidade</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="naturality"
+                  name="naturality"
+                  maxlength="11" 
+                  placeholder="Brasil"
+                >
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="nationality">Nacionalidade</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="nationality"
+                  name="nationality"
+                  maxlength="11" 
+                  placeholder="Brasil"
+                >
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="telephone_home">Telefone Residencial</label>
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  id="telephone_home"
+                  name="telephone_home"
+                  maxlength="11" 
+                  placeholder="(85) 3384-0000"
+                >
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="telephone_cellphone">Telefone Celular</label>
+                <input 
+                  type="tel" 
+                  class="form-control" 
+                  id="telephone_cellphone"
+                  name="telephone_cellphone"
+                  maxlength="11" 
+                  placeholder="(85) 99999-9999"
+                >
+              </div>
+              
             </div>
           </section>
         </article>
@@ -76,7 +165,96 @@
             <h5>Endereço</h5>
             <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <section></section>
+          <section>
+            
+            <div class="form-group">
+              <label for="patio">Logradouro</label>
+              <input 
+                type="text" 
+                class="form-control" 
+                id="patio" 
+                name="patio"
+                placeholder="Avenida das Uvas"
+              >
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="number">Número</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="number" 
+                  name="number"
+                  placeholder="148"
+                >
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="complement">Complemento</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="complement" 
+                  name="complement"
+                  placeholder="Ex: Casa, Apartamento"
+                >
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-6 mb-3">
+                <label for="cep">CEP</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="cep" 
+                  name="cep"
+                  maxlength="8"
+                  placeholder="61512148"
+                >
+              </div>
+              <div class="col-md-6 mb-3">
+                <label for="district">Bairro</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="district" 
+                  name="district"
+                  placeholder="Ex: Jereissati"
+                >
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-md-4 mb-3">
+                <label for="city">Cidade</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="city" 
+                  name="city"
+                  placeholder="Maracanaú"
+                >
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="state">Estado</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="state" 
+                  name="state"
+                  placeholder="CE, Ceará"
+                >
+              </div>
+              <div class="col-md-4 mb-3">
+                <label for="country">País</label>
+                <input 
+                  type="text" 
+                  class="form-control" 
+                  id="country" 
+                  name="country"
+                  placeholder="Brasil, Portugal"
+                >
+              </div>
+            </div>
+          </section>
         </article>
         
         <article>
@@ -90,21 +268,209 @@
                 <h5>Carro</h5>
                 <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section></section>
+              <section>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="brand_car">Marca</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      name="brand_car"
+                      id="brand_car"
+                      placeholder="Chevrolet"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="model_car">Modelo</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      name="model_car"
+                      id="model_car"
+                      placeholder="Onix"
+                    />
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="type_car">Marca</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      name="type_car"
+                      id="type_car"
+                      placeholder="Sedan, Hatch"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="license_plate">Placa</label>
+                    <input 
+                      type="text" 
+                      class="form-control"
+                      name="license_plate"
+                      id="license_plate"
+                      placeholder="XXX-9999"
+                    />
+                  </div>
+                </div>
+              </section>
             </article>
             <article>
               <div class="d-flex justify-content-between">
                 <h5>Imóvel</h5>
                 <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section></section>
+              <section>
+                <div class="form-group">
+                  <label for="patio_property">Logradouro</label>
+                  <input 
+                    type="text" 
+                    class="form-control" 
+                    id="patio_property" 
+                    name="patio_property"
+                    placeholder="Avenida das Uvas"
+                  >
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="number_property">Número</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="number_property" 
+                      name="number_property"
+                      placeholder="148"
+                    >
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="complement_property">Complemento</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="complement_property" 
+                      name="complement_property"
+                      placeholder="Ex: Casa, Apartamento"
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cep_property">CEP</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="cep_property" 
+                      name="cep_property"
+                      maxlength="8"
+                      placeholder="61512148"
+                    >
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="district_property">Bairro</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="district_property" 
+                      name="district_property"
+                      placeholder="Ex: Jereissati"
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="city_property">Cidade</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="city_property" 
+                      name="city_property"
+                      placeholder="Maracanaú"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="state_property">Estado</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="state_property" 
+                      name="state_property"
+                      placeholder="CE, Ceará"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="country_property">País</label>
+                    <input 
+                      type="text" 
+                      class="form-control" 
+                      id="country_property" 
+                      name="country_property"
+                      placeholder="Brasil, Portugal"
+                    >
+                  </div>
+                </div>
+              </section>
             </article>
             <article>
               <div class="d-flex justify-content-between">
                 <h5>Conta bancária</h5>
                 <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section></section>
+              <section>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="bank">Banco</label>
+                    <input 
+                      class="form-control"
+                      name="bank"
+                      id="bank"
+                      type="text"
+                      placeholder="Nubank"
+                    >
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="agency">Agência</label>
+                    <input 
+                      class="form-control"
+                      name="agency"
+                      id="agency"
+                      type="text"
+                      placeholder="Nubank"
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="operation">Operação</label>
+                    <input 
+                      class="form-control"
+                      name="operation"
+                      id="operation"
+                      type="text"
+                      placeholder="Nubank"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="number_bank">Número</label>
+                    <input 
+                      class="form-control"
+                      name="number_bank"
+                      id="number_bank"
+                      type="text"
+                      placeholder="Nubank"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="type_bank">Tipo</label>
+                    <input 
+                      class="form-control"
+                      name="type_bank"
+                      id="type_bank"
+                      type="text"
+                      placeholder="Nubank"
+                    >
+                  </div>
+                </div>
+              </section>
             </article>
           </section>  
         </article>
@@ -127,7 +493,71 @@
                 <h5>Partipação societária</h5>
                 <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section></section>
+              <section>
+                <div class="form-group">                  
+                  <label for="corporate_name">Razão Social</label>
+                  <input 
+                    class="form-control"
+                    name="corporate_name"
+                    id="corporate_name"
+                    type="text"
+                    placeholder="Nubank"
+                  >
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="cnpj">CNPJ</label>
+                    <input 
+                      class="form-control"
+                      name="cnpj"
+                      id="cnpj"
+                      type="text"
+                      maxlength="14"
+                      placeholder="XX.XXX.XXX/0001-XX"
+                    >
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="qualification_society">Qualificação Sócio</label>
+                    <input 
+                      class="form-control"
+                      name="qualification_society"
+                      id="qualification_society"
+                      type="text"
+                      placeholder="Qualificação"
+                    >
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="date_start_society">Data Entrada Sociedade</label>
+                    <input 
+                      class="form-control"
+                      name="date_start_society"
+                      id="date_start_society"
+                      type="date"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="date_end_society">Data Saída Sociedade</label>
+                    <input 
+                      class="form-control"
+                      name="date_end_society"
+                      id="date_end_society"
+                      type="date"
+                    >
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="capital">Capital</label>
+                    <input 
+                      class="form-control"
+                      name="capital"
+                      id="capital"
+                      type="text"
+                      placeholder="Capital"
+                    >
+                  </div>
+                </div>
+              </section>
             </article>
           </section>
         </article>
