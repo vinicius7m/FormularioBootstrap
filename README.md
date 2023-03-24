@@ -74,7 +74,7 @@ Os dados que foram utilizados no formulário:
 ▪ Capital
 
 - Resultado da página:
-![alt text](.\page.png)
+![alt text](https://github.com/vinicius7m/FormularioBootstrap/blob/main/page.png)
 
 - Tecnologias utilizadas:
 ▪ HTML
