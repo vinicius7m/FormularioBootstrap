@@ -23,3 +23,8 @@ button {
   border: none;
   color: #7f8c8d;
 }
+
+.btn-purple {
+  background-color: #8e44ad !important;
+  color: #fff !important;
+}
