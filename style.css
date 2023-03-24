@@ -2,11 +2,24 @@ html {
   height: 100%;
   width: 100%;
 }
-
+nav {
+  padding: 20px;
+  height: 100px;
+  width: 100%;
+  background-color: #8e44ad;
+}
 body {
   background-color: #ecf0f1 !important;
 }
 
 main {
+  margin-top: -25px;
   background-color: #fff;
+}
+
+button {
+  border-radius: 100%;
+  background: none;
+  border: none;
+  color: #7f8c8d;
 }

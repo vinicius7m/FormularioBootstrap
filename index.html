@@ -12,17 +12,22 @@
 
 <body>
   
-  <main class="container col-md-6 rounded">
-    <form action="https://www.w3schools.com/action_page.php" method="POST">
-      <fieldset>
-        <legend>Dados cadastrais</legend>
-        
-        <article>
+  <nav>
+    <div class="container col-md-6">
+      <div class="d-flex align-items-end">
+        <h2 class="text-light">Dados cadastrais</h2>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container col-md-6 px-5 pt-5 pb-4 rounded">
+    <form action="https://www.w3schools.com/action_page.php" method="POST">      
+        <article class="my-3">
           <div class="d-flex justify-content-between">
             <h5>Informações pessoais</h5>
-            <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+            <button type="button" data-toggle="collapse" data-target="#collapse-form-person-data"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <section>
+          <section class="collapse" id="collapse-form-person-data">
             
             <div class="form-group">
               <label for="name">Nome</label>
@@ -160,12 +165,12 @@
           </section>
         </article>
         
-        <article>
+        <article class="my-3">
           <div class="d-flex justify-content-between">
             <h5>Endereço</h5>
-            <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+            <button data-toggle="collapse" data-target="#collapse-form-address" type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <section>
+          <section class="collapse" id="collapse-form-address">
             
             <div class="form-group">
               <label for="patio">Logradouro</label>
@@ -257,18 +262,18 @@
           </section>
         </article>
         
-        <article>
+        <article class="my-3">
           <div class="d-flex justify-content-between">
             <h5>Propriedades</h5>
-            <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+            <button data-toggle="collapse" data-target="#collapse-form-properties" type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <section>
-            <article>
+          <section class="collapse" id="collapse-form-properties">
+            <article class="my-3">
               <div class="d-flex justify-content-between">
                 <h5>Carro</h5>
-                <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                <button data-toggle="collapse" data-target="#collapse-form-car" type="button" ><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section>
+              <section class="collapse" id="collapse-form-car">
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="brand_car">Marca</label>
@@ -315,12 +320,12 @@
                 </div>
               </section>
             </article>
-            <article>
+            <article class="my-3">
               <div class="d-flex justify-content-between">
                 <h5>Imóvel</h5>
-                <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                <button data-toggle="collapse" data-target="#collapse-form-property" type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section>
+              <section class="collapse" id="collapse-form-property">
                 <div class="form-group">
                   <label for="patio_property">Logradouro</label>
                   <input 
@@ -410,12 +415,12 @@
                 </div>
               </section>
             </article>
-            <article>
+            <article class="my-3">
               <div class="d-flex justify-content-between">
                 <h5>Conta bancária</h5>
-                <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                <button data-toggle="collapse" data-target="#collapse-form-account-bank" type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section>
+              <section class="collapse" id="collapse-form-account-bank">
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="bank">Banco</label>
@@ -475,18 +480,18 @@
           </section>  
         </article>
 
-        <article>
+        <article class="my-3">
           <div class="d-flex justify-content-between">
             <h5>Vínculos</h5>
-            <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+            <button data-toggle="collapse" data-target="#collapse-form-links" type="button"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <section>
-            <article>
+          <section class="collapse" id="collapse-form-links">
+            <article class="my-3">
               <div class="d-flex justify-content-between">
                 <h5>Último emprego</h5>
-                <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                <button data-toggle="collapse" data-target="#collapse-form-last-job" type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section>
+              <section class="collapse" id="collapse-form-last-job">
                 <div class="form-row">
                   <div class="col-md-6 mb-3">
                     <label for="corporate_year">Ano</label>
@@ -586,12 +591,12 @@
                 </div>
               </section>
             </article>
-            <article>
+            <article class="my-3">
               <div class="d-flex justify-content-between">
                 <h5>Partipação societária</h5>
-                <button type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                <button data-toggle="collapse" data-target="#collapse-form-equity" type="button"><i class="fa-solid fa-chevron-down"></i></button>
               </div>
-              <section>
+              <section class="collapse" id="collapse-form-equity">
                 <div class="form-group">                  
                   <label for="corporate_name">Razão Social</label>
                   <input 
@@ -659,8 +664,9 @@
             </article>
           </section>
         </article>
-        
-      </fieldset>
+        <div class="d-flex justify-content-end">
+          <button class="btn btn-primary mb-3 col-3" type="submit">Enviar</button>
+        </div>
     </form>
   </main>
   
